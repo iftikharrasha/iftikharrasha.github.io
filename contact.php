@@ -26,9 +26,9 @@ if(isset($_POST['SUBMIT']))
   $query_run = mysqli_query($conn, $sql);
 			
 			if($query_run){	
-				header('location:index.php?text_success');
+				header('location:index.html?text_success');
 			}else {
-				header('location:index.php?no_success');
+				header('location:index.html?no_success');
 			} 
 }
 
