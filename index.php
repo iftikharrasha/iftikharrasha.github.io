@@ -64,8 +64,8 @@
                   <p></p>
                 </a>
 				
-				<a href="#0">
-                  <h3>Iftikhar Rasha<br>Full Stack Web Developer</h3>
+				        <a href="#0">
+                  <h3>Iftikhar Rasha</h3>
                   <p>North South University<br>Dhaka, Bangladesh</p>
                 </a>
                 <a href="#0">
@@ -183,10 +183,10 @@
             <div class="hire">
               <h2>How can i help you?</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
+              <form action="contact.php" method="POST" class="work-request" >
                 <div class="work-request--options">
                   <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="app design">
+                    <input id="opt-1" type="checkbox" value="Web design" name="webdesign" >
                     <label for="opt-1">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -196,7 +196,7 @@
                       </svg>
                       Web Design
                     </label>
-                    <input id="opt-2" type="checkbox" value="graphic design">
+                    <input id="opt-2" type="checkbox" value="Wordpress" name="wordpress" >
                     <label for="opt-2">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -206,7 +206,7 @@
                       </svg>
                       Wordpress
                     </label>
-                    <input id="opt-3" type="checkbox" value="motion design">
+                    <input id="opt-3" type="checkbox" value="Ui/Ux" name="uiux">
                     <label for="opt-3">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -218,7 +218,7 @@
                     </label>
                   </span>
                   <span class="options-b">
-                    <input id="opt-4" type="checkbox" value="ux design">
+                    <input id="opt-4" type="checkbox" value="E-Commerce" name="ecommerce">
                     <label for="opt-4">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -228,7 +228,7 @@
                       </svg>
                       E-Commerce
                     </label>
-                    <input id="opt-5" type="checkbox" value="webdesign">
+                    <input id="opt-5" type="checkbox" value="Customization" name="customize">
                     <label for="opt-5">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -238,7 +238,7 @@
                       </svg>
                       Customization
                     </label>
-                    <input id="opt-6" type="checkbox" value="marketing">
+                    <input id="opt-6" type="checkbox" value="Data Analysis" name="dataanalysis">
                     <label for="opt-6">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -252,15 +252,15 @@
                 </div>
                 <div class="work-request--information">
                   <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
-                    <label for="name">Your Name</label>
+                    <input id="name" type="text" spellcheck="false" name="query">
+                    <label for="name">Your Query</label>
                   </div>
                   <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
+                    <input id="email" type="text" spellcheck="false" name="email">
                     <label for="email">Your Email</label>
                   </div>
                 </div>
-                <input type="submit" value="Send Request">
+                <input type="submit" name="SUBMIT" value="Send Request">
               </form>
             </div>
           </li>
