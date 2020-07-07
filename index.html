@@ -11,13 +11,27 @@
 </head>
 <body>
 
+<!--<div id="overlayer"></div>
+
+		<div class="loadmain">
+			<div class="loadtext">
+				Peacebusters
+			</div>
+			<div class="loadtitle">
+				IFTIKHAR RASHA
+			</div>
+			<div class="loadbar">
+				<div id="fill"></div>
+			</div>
+</div>-->
+
 <!-- notification for small viewports and landscape oriented smartphones -->
 <div class="device-notification">
   <a class="device-notification--logo" href="#0">
-    <img src="assets/img/pb1.png" alt="Global">
-    <p>Peacebusters</p>
+    <img src="assets/img/pb2.png" alt="Global">
+    <p>WAIT A MINUTE!</p>
   </a>
-  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+  <p class="device-notification--message">If you are not lost you are checking my responsiveness, a worthy client i see. Orient your device to portrait mode or find a larger screen.<br></p>
 </div>
 
 <div class="perspective effect-rotate-left">
@@ -77,7 +91,7 @@
           </li>
           <li class="l-section section">
             <div class="work">
-              <h2>I can insist you on</h2>
+              <h2>I can assist you on</h2>
               <div class="work--lockup">
                 <ul class="slider">
                   <li class="slider--item slider--item-left">
@@ -276,6 +290,45 @@
     <li>Hire Me</li>
   </ul>
 </div>
+
+ <script type="text/javascript">
+  /*if (!sessionStorage.isVisited) {
+    sessionStorage.isVisited = 'true';*/
+	var progress = 0;
+	document.onreadystatechange = function()
+	{
+		if(document.readyState == "interactive")
+		{
+			var allElement = $("*");
+			var length = allElement.length;
+			for(var i=0;i<length;i++)
+			{
+				set_element(allElement[i], length);
+			}
+		}
+	}
+	function set_element(element, totalElement){
+		var percentage = 100 / totalElement;
+		if($(element).length==1)
+		{
+			$("#fill").animate({width:progress+percentage+"%"},3,function(){
+				if(document.getElementById("fill").style.width=="100%")
+				{
+					$(".loadmain").fadeOut(500);
+				}
+			});
+			progress = progress + percentage;
+		}		
+	}
+	/*}else {
+		$(".loadmain").hide();
+}*/
+	
+</script>
+
+<!--darkmode-->
+<!--<script src="assets/js/darkmode-js.min.js"></script>
+<script src="assets/js/darkmode-js.js"></script>-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
